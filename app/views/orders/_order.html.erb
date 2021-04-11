@@ -1,0 +1,17 @@
+<h2>Open Orders</h2>
+<table>
+  <tr>
+    <th>Order Id</th>
+    <th>Product
+    <th>Price
+    <th>Customer</th>  
+  </tr>
+    <tr>
+        <td><%= order.id %></td>
+        <% order.products.each do |product| %>
+            <td><%= product.name %></td>
+            <td><%= product.price %></td>
+        <% end %>
+        <td><%= order.customer.name %></td>
+    </tr>
+</table>
